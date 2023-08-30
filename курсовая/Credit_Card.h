@@ -1,9 +1,7 @@
 #pragma once
-#include <string>
 #include "Expense.h"
-#include "Internet_Wallet.h"
-#include "Debit_Card.h"
-#include "Wallet.h"
+#include <string>
+#include <vector>
 class Credit_Card
 {
 
@@ -18,5 +16,6 @@ public:
 	Credit_Card();
 	Credit_Card(int balance, string name, bool status);
 	void printCardStatus();
+	~Credit_Card() {};
 };
 

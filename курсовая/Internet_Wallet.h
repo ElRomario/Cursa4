@@ -1,9 +1,7 @@
 #pragma once
-#include <string>
 #include "Expense.h"
-#include "Debit_Card.h"
-#include "Credit_Card.h"
-#include "Wallet.h"
+#include <vector>
+#include <string>
 class Internet_Wallet
 {
 private:
@@ -17,6 +15,7 @@ public:
 	Internet_Wallet();
 	Internet_Wallet(int balance, string name, bool status);
 	void printCardStatus();
+	~Internet_Wallet() {};
 	
 };
 

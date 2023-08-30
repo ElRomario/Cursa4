@@ -24,6 +24,7 @@
     <ProjectGuid>{0efeaa56-c26c-4e17-a78a-a0ca737b304b}</ProjectGuid>
     <RootNamespace>курсовая</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cursa4</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,12 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Credit_Card.cpp" />
+    <ClCompile Include="Credit_Card.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Debit_Card.cpp" />
     <ClCompile Include="Expense.cpp" />
     <ClCompile Include="Internet_Wallet.cpp" />
     <ClCompile Include="Wallet.cpp" />
-    <ClCompile Include="курсовая.cpp" />
+    <ClCompile Include="Cursa4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Credit_Card.h" />

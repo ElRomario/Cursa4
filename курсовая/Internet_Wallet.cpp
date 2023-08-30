@@ -1,4 +1,7 @@
 #include "Internet_Wallet.h"
+#include <iostream>
+
+using namespace std;
 
 Internet_Wallet::Internet_Wallet()
 {

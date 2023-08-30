@@ -3,7 +3,7 @@
 
 
 template <typename T>
-void printAccount(const vector<T>& acc)
+void printAccount(vector<T>& acc)
 {
 	for (int i = 0; i < acc.size(); i++)
 	{
@@ -36,6 +36,21 @@ Wallet::Wallet(Credit_Card& card)
 Wallet::Wallet(Internet_Wallet& card)
 {
 	internetWalletVector.push_back(card);
+}
+
+void Wallet::addDebitCard(Debit_Card& card)
+{
+	debitCardVector.push_back(card);
+}
+
+void Wallet::addCreditCard(Credit_Card& card)
+{
+	creditCardVector.push_back(card);
+}
+
+void Wallet::addInternetWallet(Internet_Wallet& wallet)
+{
+	internetWalletVector.push_back(wallet);
 }
 
 

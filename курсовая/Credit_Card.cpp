@@ -1,5 +1,6 @@
 #include "Credit_Card.h"
-
+#include <iostream>
+using namespace std;
 Credit_Card::Credit_Card()
 {
 	balance = 0;
