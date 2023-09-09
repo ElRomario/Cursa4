@@ -1,8 +1,13 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (курсовая.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   Cursa4.cpp
-C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(11,9): warning C4930: Wallet wal(void): функция с прототипом не вызвана (предполагалось определение переменной?)
-  Wallet.cpp
-C:\Users\ElRomario\source\repos\курсовая\курсовая\Wallet.cpp(8,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\ElRomario\source\repos\курсовая\курсовая\Wallet.cpp(16): message : выполняется компиляция ссылки на экземпляр шаблон функции "void printAccount<Debit_Card>(std::vector<Debit_Card,std::allocator<Debit_Card>> &)"
-  Создание кода...
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(85,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(125,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(154,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(258,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(35,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(89): message : выполняется компиляция ссылки на экземпляр шаблон функции "void sectionOperations<Debit_Card>(std::vector<Debit_Card,std::allocator<Debit_Card>>,int)"
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(37,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(141,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(184): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<Expense,std::allocator<Expense>> moveExpensesToTop<Credit_Card>(std::vector<Credit_Card,std::allocator<Credit_Card>> &)"
+C:\Users\ElRomario\source\repos\курсовая\курсовая\Cursa4.cpp(143,21): warning C4018: <: несоответствие типов со знаком и без знака
   курсовая.vcxproj -> C:\Users\ElRomario\source\repos\курсовая\Debug\Cursa4.exe

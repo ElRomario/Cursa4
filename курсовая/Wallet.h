@@ -14,7 +14,7 @@ private:
 		vector<Credit_Card> creditCardVector;
 		vector<Internet_Wallet> internetWalletVector;
 		friend class Debit_Card;
-		friend class Internet_Waallet;
+		friend class Internet_Wallet;
 		friend class Credit_Card;
 public:
 	void printAllAccounts();
@@ -23,9 +23,33 @@ public:
 	Wallet(Credit_Card& card);
 	Wallet(Internet_Wallet& card);
 
-	void addDebitCard(Debit_Card& card);
-	void addCreditCard(Credit_Card& card);
-	void addInternetWallet(Internet_Wallet& wallet);
+	vector<Debit_Card>& getDebitCardVector();
+	vector<Credit_Card>& getCreditCardVector();
+	vector<Internet_Wallet>& getInternetWalletVector();
+
+	void addDebitCard(Debit_Card card);
+	void addCreditCard(Credit_Card card);
+	void addInternetWallet(Internet_Wallet wallet);
+
+	void addExpenseToDebitCard(Expense& expense, int id);
+	void addExpenseToCreditCard(Expense& expense, int id);
+	void addExpenseToInternetWallet(Expense& expense, int id);
+
+	template <typename T>
+	void printExpences(vector<T>& inputVector);
+	template <typename T>
+	void addExpense(vector<T>& inputVector, Expense& transaction, int id);
+	template <typename T>
+	void printVector(vector<T>& inputVector);
+
+	void creditCardOperations(int ID);
+	void debitCardOperations(int ID);
+	void internetWalletOperations(int ID);
+
+	void printDebitCardExpences();
+	void printCreditCardExpences();
+	void printInternetWalletExpences();
+
 
 
 
